@@ -24,7 +24,7 @@ def wishMe():
         speak("Good Afternoon!")
     else:
         speak("Good Evening!")
-    speak("I am Jarvis Ma'am !Please tell me,how may I help you")
+    speak("I am Jarvis SIR !Please tell me,how may I help you")
 
 
 def takeCommand():
@@ -84,11 +84,11 @@ if __name__ == "__main__":
             os.startfile(os.path.join(music_dir, songs[1]))
         elif 'the time' in query:
             strTime = datetime.datetime.now().strftime("%H:%H:%S")
-            speak(f"Ma'am , The time is{strTime}")
+            speak(f"SIR , The time is{strTime}")
         elif 'open code' in query:
             codepath = 'D:\\Installed Softs\\Microsoft VS Code\\Code.exe'
             os.startfile(codepath)
-        elif 'email to sakshi' in query:
+        elif 'email to NAME' in query:
             try:
                 speak("What should i say?")
                 content = takeCommand()
